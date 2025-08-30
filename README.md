@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://oliverrevelo.vercel.app/">
-    <img src="https://oliverrevelo.vercel.app/cover.webp" alt="Oliver Revelo | Web Developer & Designer" />
+    <img src="https://oliverrevelo.vercel.app/cover.webp" alt="Oliver Revelo | Web Developer & Designer" width="600" />
   </a>
 </p>
 
@@ -21,7 +21,7 @@ I'm a freelance web developer and designer based in Rizal, Philippines, with a p
 
 ### 🛠️ My Tech Stack
 
-<p>
+<p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=nextjs,react,ts,nodejs,firebase,tailwind,figma,ps,ai" />
   </a>
