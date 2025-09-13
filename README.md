@@ -1,4 +1,4 @@
-# Hi there, I'm Oliver Revelo 👋
+# Hi there, I'm 👋
 
 <p align="center">
   <a href="https://oliverrevelo.vercel.app/">
