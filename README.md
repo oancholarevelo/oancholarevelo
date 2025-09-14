@@ -23,7 +23,7 @@ I'm a freelance web developer and designer based in Rizal, Philippines, with a p
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nextjs,react,ts,nodejs,firebase,tailwind,figma,ps,ai" />
+    <img src="https://skillicons.dev/icons?i=nextjs,react,ts,nodejs,python,firebase,tailwind,figma,ps,ai" />
   </a>
 </p>
 
