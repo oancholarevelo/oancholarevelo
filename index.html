@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Architect - Refined Buttons</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+            color: #1e293b; /* slate-800 */
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #e2e8f0; /* slate-200 */
+            box-shadow: 0 4px_6px -1px rgb(0 0 0 / 0.04), 0 2px 4px -2px rgb(0 0 0 / 0.04);
+        }
+
+        .input-field {
+            @apply w-full bg-slate-50 border border-slate-300 text-slate-900 rounded-lg px-4 py-3 focus:ring-2 focus:ring-slate-900 focus:border-slate-900 transition duration-200 outline-none placeholder-slate-400;
+        }
+        
+        /* --- Enhanced Button Styles --- */
+        .btn {
+            @apply w-full h-12 px-5 rounded-lg font-semibold transition-all duration-300 ease-in-out flex items-center justify-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+        }
+        .btn-primary {
+            @apply bg-slate-900 text-white bg-gradient-to-b from-slate-800 to-slate-900 hover:shadow-lg hover:-translate-y-0.5 focus-visible:ring-slate-900;
+        }
+        .btn-secondary {
+            @apply bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 hover:border-slate-400 focus-visible:ring-slate-400;
+        }
+        
+        .mode-toggle {
+            @apply grid grid-cols-2 gap-2 rounded-lg bg-slate-100 p-1.5;
+        }
+        .mode-btn {
+            @apply w-full p-2 text-center text-sm font-medium z-10 cursor-pointer text-slate-600 rounded-md transition-colors duration-300;
+        }
+        .mode-btn.active {
+            @apply bg-white text-slate-900 shadow-sm;
+        }
+
+        /* JSON Syntax Highlighting */
+        .json-key { color: #cbd5e1; } /* slate-300 */
+        .json-string { color: #a5b4fc; } /* indigo-300 */
+        .json-number { color: #6ee7b7; } /* emerald-300 */
+        .json-boolean { color: #fcd34d; } /* amber-300 */
+        .json-null { color: #94a3b8; } /* slate-400 */
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; } /* slate-300 */
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; } /* slate-400 */
+    </style>
+</head>
+<body class="min-h-screen w-full flex items-center justify-center p-4 sm:p-6 lg:p-8">
+
+    <main class="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        
+        <div class="card p-6 sm:p-8 rounded-2xl flex flex-col h-full">
+            <div class="flex-grow flex flex-col">
+                <div class="flex items-center gap-4 mb-3">
+                     <div class="bg-slate-100 p-3 rounded-lg border border-slate-200">
+                        <i data-lucide="brain-circuit" class="w-7 h-7 text-slate-700"></i>
+                     </div>
+                     <div>
+                        <h1 class="text-3xl font-bold text-slate-900">AI Prompt Architect</h1>
+                        <p class="text-slate-500 mt-1">Describe your goal. I'll engineer the perfect JSON prompt.</p>
+                     </div>
+                </div>
+                
+                <div class="border-b border-slate-200 my-6"></div>
+
+                <div class="mode-toggle mb-6">
+                    <div id="modeSimpleBtn" class="mode-btn active">Simple</div>
+                    <div id="modeAdvancedBtn" class="mode-btn">Advanced</div>
+                </div>
+            
+                <div id="simple-form" class="flex-grow flex flex-col">
+                    <label for="simple-task" class="text-sm font-medium text-slate-700 mb-2">Your Instructions</label>
+                    <textarea id="simple-task" rows="16" class="input-field flex-grow text-base" placeholder="Example: You are a travel blogger writing for budget-conscious millennials. Create a 3-day itinerary for a trip to Tokyo in a witty and enthusiastic tone. Respond with a markdown table. Do not include activities that cost more than $50."></textarea>
+                </div>
+
+                <div id="advanced-form" class="hidden flex-grow flex flex-col">
+                     <div class="space-y-6">
+                        <div><label for="persona" class="text-sm font-medium text-slate-700">Persona / Role</label><input type="text" id="persona" class="input-field mt-2" placeholder="e.g., A world-class software engineer"></div>
+                        <div><label for="task" class="text-sm font-medium text-slate-700">Primary Task <span class="text-red-500">*</span></label><textarea id="task" rows="3" class="input-field mt-2" placeholder="e.g., Write a Python script..."></textarea></div>
+                        <div><label for="context" class="text-sm font-medium text-slate-700">Context / Background</label><textarea id="context" rows="2" class="input-field mt-2" placeholder="e.g., The script should read files..."></textarea></div>
+                        <div><label for="format" class="text-sm font-medium text-slate-700">Output Format</label><input type="text" id="format" class="input-field mt-2" placeholder="e.g., A single, well-commented Python file."></div>
+                        <div><label for="constraints" class="text-sm font-medium text-slate-700">Constraints</label><textarea id="constraints" rows="2" class="input-field mt-2" placeholder="e.g., Do not use any external libraries."></textarea></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-6 border-t border-slate-200">
+                <button id="generateBtn" class="btn btn-primary">
+                    <i data-lucide="wand-sparkles" class="w-5 h-5"></i>
+                    <span>Generate JSON</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card p-6 sm:p-8 rounded-2xl flex flex-col h-full min-h-[400px] lg:min-h-0">
+            <div class="flex-grow flex flex-col">
+                <h2 class="text-xl font-bold mb-4 text-slate-900">Generated JSON</h2>
+                <div class="relative flex-grow bg-slate-900 text-white rounded-lg overflow-auto border border-slate-300">
+                     <pre class="p-4 text-sm"><code id="jsonOutput">{
+      <span class="json-key">"message"</span>: <span class="json-string">"Your generated JSON will appear here..."</span>
+    }</code></pre>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-slate-200">
+                <button id="copyBtn" class="btn btn-secondary">
+                     <i data-lucide="clipboard" id="copyIcon" class="w-5 h-5"></i>
+                     <i data-lucide="check" id="checkIcon" class="hidden w-5 h-5"></i>
+                     <span id="copyBtnText">Copy to Clipboard</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    
+        // DOM Elements
+        const modeSimpleBtn = document.getElementById('modeSimpleBtn');
+        const modeAdvancedBtn = document.getElementById('modeAdvancedBtn');
+        const simpleForm = document.getElementById('simple-form');
+        const advancedForm = document.getElementById('advanced-form');
+        const generateBtn = document.getElementById('generateBtn');
+        const jsonOutput = document.getElementById('jsonOutput');
+        
+        // Copy Button Elements
+        const copyBtn = document.getElementById('copyBtn');
+        const copyBtnText = document.getElementById('copyBtnText');
+        const copyIcon = document.getElementById('copyIcon');
+        const checkIcon = document.getElementById('checkIcon');
+
+        let currentMode = 'simple';
+
+        // --- Mode Switching ---
+        function setMode(mode) {
+            currentMode = mode;
+            const isSimple = mode === 'simple';
+            
+            modeSimpleBtn.classList.toggle('active', isSimple);
+            modeAdvancedBtn.classList.toggle('active', !isSimple);
+
+            simpleForm.classList.toggle('hidden', !isSimple);
+            advancedForm.classList.toggle('hidden', isSimple);
+        }
+
+        modeSimpleBtn.addEventListener('click', () => setMode('simple'));
+        modeAdvancedBtn.addEventListener('click', () => setMode('advanced'));
+
+        // --- JSON Generation ---
+        generateBtn.addEventListener('click', () => {
+            const result = currentMode === 'simple' ? handleSimpleGeneration() : handleAdvancedGeneration();
+            const jsonString = JSON.stringify(result, null, 2);
+            jsonOutput.innerHTML = highlightJSON(jsonString);
+        });
+        
+        function handleAdvancedGeneration() {
+            const promptObject = {};
+            const task = document.getElementById('task').value.trim();
+            if (!task) return { error: "The 'Primary Task' field is required." };
+            
+            const fields = ['persona', 'context', 'format', 'constraints'];
+            fields.forEach(id => {
+                const value = document.getElementById(id).value.trim();
+                if (value) {
+                    if (id === 'constraints') {
+                        promptObject.constraints = value.split('\n').filter(line => line.trim() !== '');
+                    } else {
+                        const key = (id === 'format') ? 'output_format' : id;
+                        promptObject[key] = value;
+                    }
+                }
+            });
+            promptObject.task = task;
+            return promptObject;
+        }
+
+        class PromptParser {
+            constructor(text) { this.originalText = text; }
+            parse() {
+                if (!this.originalText.trim()) return { error: "Please enter your instructions first." };
+                const text = this.originalText.trim();
+                const keywords = {
+                    persona: /^(?:act as|you are|be a|act like|pretend you're|as a)\s+(.*?)(?=\.\s+|$)/i,
+                    tone: /(?:tone should be|in a\s+(.*?)\s+tone)/i,
+                    audience: /(?:for an audience of|writing for)\s+(.*?)(?=\.\s+|$)/i,
+                    format: /(?:output format|format should be|in the form of|respond with|as a|use)\s+(.*?)(?=\.\s+|$)/i,
+                    constraints: /(?:don't|do not|avoid|must not|without|exclude|no)\s+(.*?)(?=\.\s+|$)/gi,
+                };
+                const prompt = {};
+                for (const [key, regex] of Object.entries(keywords)) {
+                    if (key === 'constraints') {
+                        const matches = [...text.matchAll(regex)];
+                        if (matches.length > 0) {
+                            prompt.constraints = matches.map(m => m[0].trim());
+                        }
+                    } else {
+                        const match = text.match(regex);
+                        if (match && match[1]) {
+                             const keyName = key === 'format' ? 'output_format' : key;
+                             prompt[keyName] = match[1].trim().replace(/\.$/, '');
+                        }
+                    }
+                }
+                const taskRegex = /(?:create|generate|list|summarize|explain|provide|give me|tell me|build|code|draft)\s+(.*?)(?=\.\s+For example:|when|while|if|and|,|\.$|$)/i;
+                const taskMatch = text.match(taskRegex);
+                prompt.task = taskMatch ? taskMatch[0].trim() : text.split('.')[0];
+                return prompt;
+            }
+        }
+
+        function handleSimpleGeneration() {
+            const userInput = document.getElementById('simple-task').value;
+            const parser = new PromptParser(userInput);
+            return parser.parse();
+        }
+
+        // --- UI Helpers ---
+        function highlightJSON(json) {
+            if (!json) return '';
+            json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+                let cls = 'json-number';
+                if (/^"/.test(match)) cls = /:$/.test(match) ? 'json-key' : 'json-string';
+                else if (/true|false/.test(match)) cls = 'json-boolean';
+                else if (/null/.test(match)) cls = 'json-null';
+                return `<span class="${cls}">${match}</span>`;
+            });
+        }
+
+        copyBtn.addEventListener('click', () => {
+            const textToCopy = jsonOutput.innerText;
+            if(!textToCopy || textToCopy.includes("Your generated JSON will appear here...")) return;
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                copyBtnText.textContent = 'Copied!';
+                copyIcon.classList.add('hidden');
+                checkIcon.classList.remove('hidden');
+                copyBtn.classList.remove('btn-secondary');
+                copyBtn.classList.add('!bg-green-100', '!text-green-800', '!border-green-300');
+
+                setTimeout(() => {
+                    copyBtnText.textContent = 'Copy to Clipboard';
+                    copyIcon.classList.remove('hidden');
+                    checkIcon.classList.add('hidden');
+                    copyBtn.classList.add('btn-secondary');
+                    copyBtn.classList.remove('!bg-green-100', '!text-green-800', '!border-green-300');
+                }, 2000);
+            }, (err) => {
+                console.error('Failed to copy text: ', err);
+            });
+        });
+        
+        // Set initial mode on load
+        setMode('simple');
+    </script>
+</body>
+</html>
