@@ -1,7 +1,7 @@
 # Hi there, I'm Oliver 👋
 
 <p align="center">
-  <a href="https://oliverrevelo.vercel.app/">
+  <a href="https://www.oliverrevelo.com/">
     <img src="https://oliverrevelo.vercel.app/cover.webp" alt="Oliver Revelo | Web Developer & Designer" width="600" />
   </a>
 </p>
@@ -49,7 +49,7 @@ Here are some of the projects I've recently brought to life. You can find more o
 
 I'm always open to discussing new projects and opportunities.
 
-* **Website:** [oliverrevelo.vercel.app](https://oliverrevelo.vercel.app/)
+* **Website:** [oliverrevelo.com](https://www.oliverrevelo.com/)
 * **Email:** [oancholarevelo@gmail.com](mailto:oancholarevelo@gmail.com)
 * **LinkedIn:** [linkedin.com/in/oliverrevelo](https://linkedin.com/in/oliverrevelo/)
 * **Instagram:** [instagram.com/oliverrevelo.dev](https://instagram.com/oliverrevelo.dev)
