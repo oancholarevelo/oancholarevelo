@@ -31,7 +31,7 @@ I'm a freelance web developer and designer based in Rizal, Philippines, with a p
 
 ### ✨ Featured Projects
 
-Here are some of the projects I've recently brought to life. You can find more on my [portfolio website](https://oliverrevelo.vercel.app/projects).
+Here are some of the projects I've recently brought to life. You can find more on my [portfolio website](https://www.oliverrevelo.com/projects).
 
 | Project                                                      | Description                                                                                                                              |
 | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
