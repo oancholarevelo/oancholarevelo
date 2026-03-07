@@ -1,4 +1,4 @@
-# Hi there, I'm Oliver 👋
+# Hi there, I'm Oliver.
 
 <p align="center">
   <a href="https://www.oliverrevelo.com/">
@@ -6,51 +6,57 @@
   </a>
 </p>
 
-I'm a freelance web developer and designer based in Rizal, Philippines, with a passion for building high-performance websites that drive results. I specialize in creating beautiful, fast, and secure web applications that help businesses succeed online.
+I am a web developer and designer based in Rodriguez, Rizal, Philippines. With a degree in Computer Engineering and a background encompassing cybersecurity and risk management, I bridge the gap between secure backend architecture and highly engaging, user-centric frontend design.
 
 ---
 
-### 🚀 About Me
+### About My Work
 
-* 👨‍💻 I build modern, SEO-friendly websites using Next.js, TypeScript, and Tailwind CSS.
-* 🛡️ With a background in cybersecurity, I prioritize creating secure and reliable applications.
-* 🎨 I'm also a graphic designer, skilled in creating user-centric interfaces and brand identities with Figma and Adobe Creative Suite.
-* 🇵🇭 I have a deep understanding of the local market and enjoy helping businesses in the Philippines thrive.
+* **Engineering & Development:** I build modern, SEO-friendly, and highly responsive web applications utilizing Next.js, TypeScript, and Tailwind CSS.
+* **Security-Minded:** Drawing from my experience as a security analyst, I prioritize building robust and reliable platforms that protect both businesses and users.
+* **Design & UI/UX:** I craft brand identities and intuitive user interfaces using Figma and the Adobe Creative Suite, ensuring the final product is both beautiful and functional.
+* **Local & Global Reach:** While I have a deep understanding of the Philippine market, I also collaborate with international clients to deliver tailored digital solutions.
 
 ---
 
-### 🛠️ My Tech Stack
+### My Tech Stack
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nextjs,react,ts,nodejs,python,firebase,tailwind,figma,ps,ai" />
+    <img src="https://skillicons.dev/icons?i=nextjs,react,ts,nodejs,python,firebase,tailwind,figma,ps,ai" alt="Tech Stack Icons" />
   </a>
 </p>
 
 ---
 
-### ✨ Featured Projects
+### Featured Projects & Tools
 
-Here are some of the projects I've recently brought to life. You can find more on my [portfolio website](https://www.oliverrevelo.com/projects).
+Here are some of the platforms and tools I have developed. You can explore my complete portfolio at [oliverrevelo.com/projects](https://www.oliverrevelo.com/projects).
 
-| Project                                                      | Description                                                                                                                              |
-| ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| **[UsapTayo - Anonymous Chat Platform](https://usaptayo.vercel.app/)** | A safe and anonymous chat platform to connect with strangers for meaningful conversations. Features smart matchmaking and real-time messaging, with no registration required. |
-| **[CourtLink PH - Sports Court Booking Platform](https://courtlink-ph.vercel.app/)** | The premier platform for discovering and booking sports courts in the Philippines. Features real-time availability, player reviews, and an owner dashboard. |
-| **[Koru - Mental Wellness Journey](https://koruspace.vercel.app/)** | A mental wellness web application designed as a safe space for users to track their moods, journal with intention, and reflect on their personal growth. |
-| **[FloodTrack](https://floodtrack.vercel.app/)** | A community-driven platform for real-time flood monitoring and assistance, allowing users to report flood levels, add safe areas, and request or offer aid. |
-| **[Pixel & Fuse - Creative Hub](https://pixelandfuse.vercel.app/)** | An article and tutorial-based website for creatives, featuring a clean, readable layout for tutorials, tips, and industry insights. |
-| **[InternIskolar - OJT Portal](https://interniskolar.vercel.app/)** | A comprehensive OJT portal for university students to find internships, track applications, and build professional resumes with a live preview and PDF export. |
-| **[Build That Thing](https://buildthatthing.vercel.app/)** | A suite of powerful, client-side tools to help you build and create with ease. No sign-ups, no ads, just free tools that respect your privacy. |
+| Project | Description |
+| :--- | :--- |
+| **[UsapTayo](https://usaptayo.vercel.app/)** | A secure, anonymous chat platform featuring smart matchmaking and real-time messaging with zero registration required. |
+| **[CourtLink PH](https://courtlink-ph.vercel.app/)** | A premier platform for discovering and booking sports courts in the Philippines, featuring real-time availability and an owner dashboard. |
+| **[FloodTrack](https://floodtrack.vercel.app/)** | A community-driven platform for real-time flood monitoring, allowing users to report levels, locate safe areas, and coordinate assistance. |
+| **[Koru](https://koruspace.vercel.app/)** | A mental wellness web application designed for mood tracking, intentional journaling, and personal growth reflection. |
+| **[PangMeryenda](https://pangmeryenda.vercel.app)** | A dedicated platform built to help local creators receive support and funding from their communities. |
+| **[Responsiver](https://responsiver.vercel.app)** | A custom developer tool designed to quickly and accurately check website responsiveness across various device viewports. |
+| **[Pixel & Fuse](https://pixelandfuse.vercel.app/)** | A creative hub featuring a clean layout for articles, tutorials, and industry insights for designers and developers. |
 
 ---
 
-### 📫 Get in Touch
+### Beyond the Code
 
-I'm always open to discussing new projects and opportunities.
+When I am away from the keyboard, I stay active by playing basketball, hiking the local trails, riding my bike, and drinking coffee and matcha every day.
 
-* **Website:** [oliverrevelo.com](https://www.oliverrevelo.com/)
-* **Email:** [oancholarevelo@gmail.com](mailto:oancholarevelo@gmail.com)
+---
+
+### Get in Touch
+
+I am always open to discussing new projects and opportunities. To keep project details organized and well-documented, I prefer asynchronous communication like email or chat rather than hopping on calls. 
+
+* **Portfolio:** [oliverrevelo.com](https://www.oliverrevelo.com/)
+* **Email:** [hello@oliverrevelo.com](mailto:hello@oliverrevelo.com)
 * **LinkedIn:** [linkedin.com/in/oliverrevelo](https://linkedin.com/in/oliverrevelo/)
-* **Instagram:** [instagram.com/oliverrevelo.dev](https://instagram.com/oliverrevelo.dev)
-* **Facebook:** [facebook.com/oliverevelo](https://facebook.com/oliverevelo)
+
+*Currently accepting new projects. I typically structure contracts with a 50% initial downpayment and the remaining 50% upon project handover.*
